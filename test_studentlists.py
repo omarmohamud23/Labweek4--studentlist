@@ -137,7 +137,7 @@ class TestStudentLists(TestCase):
         test_class.add_student('Farmaajo')
         test_class.add_student('Mukami')
         test_class.add_student('Abdi')
-        test_class.add_student('Bisharp')
+        test_class.add_student('Bisharo')
         self.assertTrue(test_class.is_class_full())
     
     ## TODO write a test for your new is_class_full method for when is empty, 
@@ -147,7 +147,7 @@ class TestStudentLists(TestCase):
         self.assertFalse(test_class.is_class_full())
 
     def test_is_class_full_when_not_full(self): 
-        test_class = ClassList(3)
-        test_class.add_student('Fatma')
-        test_class.add_student('Alisha')
+        test_class = ClassList(4)
+        test_class.add_student('Otieno')
+        test_class.add_student('odinga')
         self.assertFalse(test_class.is_class_full())
